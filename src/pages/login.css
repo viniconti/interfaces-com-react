@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.body {
+  background-image: url(/public/imagens/felix-lam-J7fxkhtOqt0-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  height: 480px;
+  width: 460px;
+  border: 1px solid whitesmoke;
+  gap: 30px;
+  border-radius: 13px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 4px 29px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 4px 29px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 29px -9px rgba(0, 0, 0, 0.75);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.button {
+  height: 51px;
+  width: 340px;
+  border-radius: 50px;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #38bdf8, #1b1d94);
+  color: white;
+
+  transition: background-position 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  background-size: 200%;
+}
+.button:hover {
+  background-position: right;
+  transform: scale(1.04);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+}
+
+.input {
+  width: 340px;
+  height: 51px;
+  border-radius: 50px;
+  border: none;
+  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+.input::placeholder {
+  color: white;
+}
+.checkForgot {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  gap: 10px;
+  font-weight: 400;
+}
+.forgot {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+.register {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: white;
+}
+.p {
+  font-weight: 300;
+}
+.href {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.msg-sucesso {
+  color: lime;
+  font-size: 18px;
+}
+.msg-erro {
+  color: red;
+  font-size: 18px;
+}
+.inputCheck {
+  transition: transform 0.8s ease-in-out; 
+}
+.inputCheck:hover {
+  transform: rotate(360deg);
+}
