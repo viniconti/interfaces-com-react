@@ -83,7 +83,7 @@ function Register() {
         </div>
 
         <button onClick={verificar} className="register-button">
-          Login
+          Register
         </button>
 
         <div className="register-register">
