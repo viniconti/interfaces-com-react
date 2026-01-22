@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "./login.css";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+
   const [username, setUsername] = useState("");
   const [senha, setSenha] = useState("");
   const [texto, setTexto] = useState("");
@@ -23,17 +26,17 @@ function Login() {
     }
   }
   return (
-    <div className="container">
-      <p className={sucesso ? "msg-sucesso" : "msg-erro"}>{texto}</p>
+    <div className="login-container">
+      <p className={sucesso ? "login-msg-sucesso" : "login-msg-erro"}>{texto}</p>
 
-      <div className="box">
-        <div className="login">
+      <div className="login-box">
+        <div className="login-login">
           <h1 style={{ color: "white" }}>Login</h1>
 
           <input
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="input"
+            className="login-input"
             type="text"
             placeholder="Username"
           />
@@ -41,30 +44,30 @@ function Login() {
           <input
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
-            className="input"
+            className="login-input"
             type="password"
             placeholder="Password"
           />
         </div>
 
-        <div className="checkForgot">
-          <div className="checkbox">
-            <input id="inputBox" className="inputCheck" type="checkbox" />
+        <div className="login-checkForgot">
+          <div className="login-checkbox">
+            <input id="inputBox" className="login-inputCheck" type="checkbox" />
             <p>remember me</p>
           </div>
 
-          <a className="forgot" href="#">
+          <a className="login-forgot" href="#">
             Forgot password?
           </a>
         </div>
 
-        <button onClick={verificar} className="button">
+        <button onClick={verificar} className="login-button">
           Login
         </button>
 
-        <div className="register">
-          <p className="p">Don't have an account?</p>
-          <a className="href" href="">
+        <div className="login-register">
+          <p className="login-p">Don't have an account?</p>
+          <a className="login-href" href="/register">
             Register
           </a>
         </div>

@@ -1,24 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
-}
-
-.body {
-  background-image: url(/public/imagens/felix-lam-J7fxkhtOqt0-unsplash.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
-.login-box {
+.register-box {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 50px;
-  height: 480px;
-  width: 460px;
+  height: 590px;
+  width: 500px;
   border: 1px solid whitesmoke;
   gap: 30px;
   border-radius: 13px;
@@ -28,7 +14,7 @@
   -webkit-box-shadow: 2px 4px 29px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 4px 29px -9px rgba(0, 0, 0, 0.75);
 }
-.login-container {
+.register-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -36,13 +22,13 @@
   justify-content: center;
   align-items: center;
 }
-.login-login {
+.register-login {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 30px;
 }
-.login-button {
+.register-button {
   height: 51px;
   width: 340px;
   border-radius: 50px;
@@ -57,13 +43,13 @@
   transition: background-position 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
   background-size: 200%;
 }
-.login-button:hover {
+.register-button:hover {
   background-position: right;
   transform: scale(1.04);
   box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
 }
 
-.login-input {
+.register-input {
   width: 340px;
   height: 51px;
   border-radius: 50px;
@@ -73,49 +59,48 @@
   border: 2px solid rgba(255, 255, 255, 0.3);
   outline: none;
 }
-.input::placeholder {
+.register-input::placeholder {
   color: white;
+  opacity: 80%;
 }
-.login-checkForgot {
+.register-checkForgot {
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 5px;
 }
-.login-checkbox {
+.register-checkbox {
   display: flex;
   flex-direction: row;
   color: white;
   gap: 10px;
   font-weight: 400;
 }
-.login-forgot {
-  color: white;
+.register-agree {
+  color: rgb(255, 255, 255);
   font-weight: 400;
-  text-decoration: none;
 }
-.login-register {
+.register-register {
   display: flex;
   flex-direction: row;
   gap: 10px;
   color: white;
 }
-.login-p {
+.register-p {
   font-weight: 300;
 }
-.login-href {
+.register-href {
   color: white;
-  font-weight: 600;
-  text-decoration: none;
+  font-weight: 500;
 }
-.login-msg-sucesso {
+.register-msg-sucesso {
   color: lime;
   font-size: 18px;
 }
-.login-msg-erro {
+.register-msg-erro {
   color: red;
   font-size: 18px;
 }
-.login-inputCheck {
+.register-inputCheck {
   transition: transform 0.8s ease-in-out; 
 }
 .inputCheck:hover {
