@@ -26,6 +26,7 @@ function Login() {
     }
   }
   return (
+    <div className="login-page">
     <div className="login-container">
       <p className={sucesso ? "login-msg-sucesso" : "login-msg-erro"}>{texto}</p>
 
@@ -72,6 +73,7 @@ function Login() {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 }

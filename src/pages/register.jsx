@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "./register.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
+  const navigate = useNavigate();
+
   const [chooseUsername, setChooseUsername] = useState("");
   const [senha, setSenha] = useState("");
   const [confirmSenha, setConfirmSenha] = useState("");
@@ -23,9 +25,11 @@ function Register() {
     } else {
       setTexto("Conta criada com sucesso!");
       setSucesso(true);
+      navigate("/");
     }
   }
   return (
+    <div className="register-page">
     <div className="register-container">
       <p className={sucesso ? "register-msg-sucesso" : "register-msg-erro"}>
         {texto}
@@ -93,6 +97,7 @@ function Register() {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 }
